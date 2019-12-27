@@ -4,6 +4,6 @@
   <div class="container">
     <h4><b>{{course.courseName}}</b></h4>
     <p>{{course.courseSummary}}</p>
-    <button class="btn btn-primary">View Chapters</button>
+    <button (click)="onSelect(course)" class="btn btn-primary">View Chapters</button>    
   </div>
 </div>

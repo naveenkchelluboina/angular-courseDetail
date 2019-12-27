@@ -9,8 +9,10 @@ import { HomeComponent } from './home/home.component';
 import { ChapterListComponent } from './chapter-list/chapter-list.component';
 
 const routes: Route = [
+  {path:'', redirectTo:'/course', pathMatch:'full'},
   {path: 'home', component:HomeComponent},
   { path: 'course', component: CourseComponent },
+  { path: 'course/:name', component: ChapterListComponent }
 ]
 
 @NgModule({

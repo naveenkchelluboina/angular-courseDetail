@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ParamMap, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-chapter-list',
@@ -7,9 +8,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChapterListComponent implements OnInit {
 
-  constructor() { }
+  public courseName:any;
+
+  public angularChapters=[
+    {"id":1,"name":"Binding"},
+    {"id":2,"name":"Routing"},
+    {"id":3,"name":"Services"}
+    ];
+    public nodeChapters=[
+    {"id":1,"name":"ABC"},
+    {"id":2,"name":"DEF"},
+    {"id":3,"name":"GHI"}
+    ];
+    public vueJsChapters=[
+    {"id":1,"name":"ABC"},
+    {"id":2,"name":"DEF"},
+    {"id":3,"name":"GHI"}
+    ];
+    public MangoDbChapters=[
+    {"id":1,"name":"ABC"},
+    {"id":2,"name":"DEF"},
+    {"id":3,"name":"GHI"}
+    ];
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    let name = this.route.snapshot.paramMap.get('name');
+    this.courseName= name;
   }
 
 }

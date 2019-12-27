@@ -7,17 +7,19 @@ import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { HomeComponent } from './home/home.component';
 import { ChapterListComponent } from './chapter-list/chapter-list.component';
+import { AngularContentComponent } from './angular-content/angular-content.component';
 
 const routes: Route = [
   {path:'', redirectTo:'/course', pathMatch:'full'},
   {path: 'home', component:HomeComponent},
   { path: 'course', component: CourseComponent },
-  { path: 'course/:name', component: ChapterListComponent }
+  { path: 'course/:name', component: ChapterListComponent },
+  { path: 'course/angular/:id', component: AngularContentComponent }
 ]
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(routes) ],
-  declarations: [ AppComponent, CourseComponent, HomeComponent, ChapterListComponent ],
+  declarations: [ AppComponent, CourseComponent, HomeComponent, ChapterListComponent, AngularContentComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

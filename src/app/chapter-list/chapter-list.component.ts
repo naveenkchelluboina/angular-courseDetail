@@ -31,7 +31,12 @@ export class ChapterListComponent implements OnInit {
     {"id":3,"name":"GHI"}
     ];
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private router: Router) { }
+
+  onAngSelect(angChapter){
+    this.router.navigate(['/course/angular',angChapter.id]);
+
+  }
 
   ngOnInit() {
     let name = this.route.snapshot.paramMap.get('name');

@@ -6,7 +6,7 @@
 <div class="container" *ngSwitchCase="'Angular'">
   <h2>Angular Chapters</h2>
    <ul class="list-group" *ngFor="let angChapter of angularChapters">
-    <li class="list-group-item">{{angChapter.name}} <span class="badge">{{angChapter.id}}</span></li>
+    <li (click)="onAngSelect(angChapter)" class="list-group-item">{{angChapter.name}} <span class="badge">{{angChapter.id}}</span></li>
   </ul>
 </div>
 <div class="container" *ngSwitchCase="'Node'">

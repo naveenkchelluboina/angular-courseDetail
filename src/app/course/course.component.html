@@ -1,17 +1,9 @@
 
-<div class="card">
-  <img src="https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png" alt="Avatar" style="width:100px">
+<div class="card" *ngFor="let course of myCourses">
+  <img src="{{course.imageUrl}}" alt="Avatar" style="width:100px">
   <div class="container">
-    <h4><b>Angular</b></h4>
-    <p>Architect & Engineer</p>
-    <button>View Chapters</button>
-  </div>
-</div>
-<div class="card">
-  <img src="https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png" alt="Avatar" style="width:100px">
-  <div class="container">
-    <h4><b>Node</b></h4>
-    <p>Architect & Engineer</p>
-    <button>View Chapters</button>
+    <h4><b>{{course.courseName}}</b></h4>
+    <p>{{course.courseSummary}}</p>
+    <button class="btn btn-primary">View Chapters</button>
   </div>
 </div>

@@ -6,6 +6,7 @@ import { RouterModule, Route } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { HomeComponent } from './home/home.component';
+import { ChapterListComponent } from './chapter-list/chapter-list.component';
 
 const routes: Route = [
   {path: 'home', component:HomeComponent},
@@ -14,7 +15,7 @@ const routes: Route = [
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(routes) ],
-  declarations: [ AppComponent, CourseComponent, HomeComponent ],
+  declarations: [ AppComponent, CourseComponent, HomeComponent, ChapterListComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

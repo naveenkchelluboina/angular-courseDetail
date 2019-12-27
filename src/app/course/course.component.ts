@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseComponent implements OnInit {
 
+  myCourses = [ 
+  {"imageUrl":"https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png","courseName":"Angular","courseSummary":"Abc"},
+  {"imageUrl":"https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png","courseName":"Node","courseSummary":"Abc"},    {"imageUrl":"https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png","courseName":"VueJs","courseSummary":"Abc"},
+  {"imageUrl":"https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png","courseName":"MangoDB","courseSummary":"Abc"}
+  ];
+
   constructor() { }
 
   ngOnInit() {

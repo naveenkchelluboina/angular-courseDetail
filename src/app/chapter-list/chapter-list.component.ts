@@ -35,7 +35,10 @@ export class ChapterListComponent implements OnInit {
 
   onAngSelect(angChapter){
     this.router.navigate(['/course/angular',angChapter.id]);
+  }
 
+  onNodeSelect(nodeChapter){
+    this.router.navigate(['/course/node',nodeChapter.id]);
   }
 
   ngOnInit() {

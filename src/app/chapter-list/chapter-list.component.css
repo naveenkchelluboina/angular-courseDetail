@@ -2,6 +2,6 @@
   cursor: pointer;
 }
 .list-group-item:hover{
-  background-color: rgb(228, 217, 217);
+  background-color: rgba(0,0,0,0.2);
   font-weight: bold;
 }

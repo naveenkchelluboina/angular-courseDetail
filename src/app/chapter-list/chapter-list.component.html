@@ -12,7 +12,7 @@
 <div class="container" *ngSwitchCase="'Node'">
   <h2>Node Chapters</h2>
    <ul class="list-group" *ngFor="let nodeChapter of nodeChapters">
-    <li class="list-group-item">{{nodeChapter.name}} <span class="badge">{{nodeChapter.id}}</span></li>
+    <li (click)="onNodeSelect(nodeChapter)" class="list-group-item">{{nodeChapter.name}} <span class="badge">{{nodeChapter.id}}</span></li>
   </ul>
 </div>
 <div class="container" *ngSwitchCase="'VueJs'">

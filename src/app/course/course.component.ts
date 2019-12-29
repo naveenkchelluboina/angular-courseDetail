@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 export class CourseComponent implements OnInit {
 
   myCourses = [ 
-  {"imageUrl":"https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png","courseName":"Angular","courseSummary":"Abc"},
-  {"imageUrl":"https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png","courseName":"Node","courseSummary":"Abc"},    {"imageUrl":"https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png","courseName":"VueJs","courseSummary":"Abc"},
+  {"imageUrl":"https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png","courseName":"Angular","courseSummary":"Angular is a platform for building mobile and desktop web applications."},
+  {"imageUrl":"https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png","courseName":"Node","courseSummary":"React is a declarative, efficient JavaScript library for building interfaces."},    {"imageUrl":"https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png","courseName":"VueJs","courseSummary":"Abc"},
   {"imageUrl":"https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png","courseName":"MangoDB","courseSummary":"Abc"}
   ];
 

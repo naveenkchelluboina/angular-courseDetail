@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ParamMap, ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-chapter-list',
   templateUrl: './chapter-list.component.html',

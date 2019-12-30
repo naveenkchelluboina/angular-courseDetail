@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { ChapterListComponent } from './chapter-list/chapter-list.component';
 import { AngularContentComponent } from './angular-content/angular-content.component';
 import { NodeContentComponent } from './node-content/node-content.component';
+import { NavhideService } from './navhide.service';
+import { NavService } from './nav.service';
 
 const routes: Route = [
   {path:'', redirectTo:'/course', pathMatch:'full'},
@@ -22,6 +24,7 @@ const routes: Route = [
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(routes) ],
   declarations: [ AppComponent, CourseComponent, HomeComponent, ChapterListComponent, AngularContentComponent, NodeContentComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [NavhideService, NavService]
 })
 export class AppModule { }

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { NavService } from '../nav.service';
+
+
 @Component({
   selector: 'app-course',
   templateUrl: './course.component.html',
@@ -14,10 +17,10 @@ export class CourseComponent implements OnInit {
   {"imageUrl":"https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png","courseName":"MangoDB","courseSummary":"Abc"}
   ];
 
-  constructor(private router: Router) { }
-
+  constructor(private router: Router, private nav:NavService){}
   onSelect(course){
     this.router.navigate(['/course',course.courseName]);
+    this.nav.navhide = false;
   }
 
   ngOnInit() {
